@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Dubber
+
+A simple web application for managing video and image content with time-based visibility control.
+
+## Features
+
+- Upload and display videos or images on a canvas
+- Drag and resize media elements
+- Control media dimensions through width/height inputs
+- Time-based visibility control with start and end times
+- Video playback controls with keyboard shortcuts
+- Media positioning with drag handles
+- Zoom control (Ctrl + Mouse Wheel)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/video-dubber.git
+cd video-dubber
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Upload Media**
+   - Click "Upload Media" to select a video or image file
+   - Supported formats: MP4, JPG, PNG, etc.
 
-## Learn More
+2. **Control Media Position**
+   - Drag the media element to position it
+   - Use corner handles to resize
+   - Use width/height inputs for precise sizing
 
-To learn more about Next.js, take a look at the following resources:
+3. **Time Control**
+   - Set start and end times for media visibility
+   - Use play/pause button or spacebar to control playback
+   - Use left/right arrow keys to step through time
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built With
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js
+- TypeScript
+- CSS Modules
+- React Hooks
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+video-dubber/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx        # Main application page
+│   │   └── globals.css     # Global styles
+│   └── components/
+│       ├── MediaCanvas.tsx # Canvas component for media display
+│       ├── MediaControls.tsx # Controls for media properties
+│       └── Timeline.tsx    # Playback timeline controls
+├── public/
+└── package.json
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

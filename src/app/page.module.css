@@ -28,10 +28,13 @@
 }
 
 .main {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  background: #141414;
+  position: relative;
 }
 
 .main ol {
@@ -165,4 +168,111 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #0F0F0F;
+  color: #FFFFFF;
+}
+
+.header {
+  height: 56px;
+  background: #1A1A1A;
+  border-bottom: 1px solid #2A2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.exportButton {
+  padding: 8px 16px;
+  background: #2962FF;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+}
+
+.workspaceContainer {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.toolbar {
+  height: 48px;
+  background: #1A1A1A;
+  border-bottom: 1px solid #2A2A2A;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.toolGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.toolGroup button {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid #2A2A2A;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toolGroup button:hover {
+  background: #2A2A2A;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #1A1A1A;
+  border-right: 1px solid #2A2A2A;
+  display: flex;
+  flex-direction: column;
+}
+
+.uploadSection {
+  padding: 20px;
+  border-bottom: 1px solid #2A2A2A;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #2962FF;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.uploadButton:hover {
+  background-color: #2051DE;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #2A2A2A;
 }

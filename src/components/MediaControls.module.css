@@ -1,0 +1,33 @@
+.controls {
+  padding: 20px;
+  background: #1A1A1A;
+  color: #fff;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #999;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  background: #2A2A2A;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #2962FF;
+}
